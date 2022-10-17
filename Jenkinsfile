@@ -41,7 +41,6 @@ pipeline {
         stage('4-Celebrate') {
             steps {
                 echo "CONGRATULYACIYA!"
-                sh "ssh -T root@slave2"
             }
         }
     }
