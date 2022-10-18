@@ -1,6 +1,5 @@
 pipeline {
     agent any
-    triggers { cron('* * * * *')}
     environment {
         PROJECT_NAME = "Project1111"
         OWNER_NAME   = "Dmitriy"
