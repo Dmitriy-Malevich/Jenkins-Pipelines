@@ -43,5 +43,12 @@ pipeline {
                 echo "CONGRATULYACIYA!"
             }
         }
+        stage("create docker image") {
+            steps {
+                echo " =========== start building image ============"
+                dir ('docker') {
+                    sh 'docker build . '
+            }
+        }
     }
 }
