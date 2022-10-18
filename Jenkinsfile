@@ -48,6 +48,7 @@ pipeline {
                 echo " =========== start building image ============"
                 dir ('docker') {
                     sh 'docker build . '
+                }
             }
         }
     }
