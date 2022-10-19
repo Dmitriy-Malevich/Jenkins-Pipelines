@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label 'docker'
+    }
     environment {
         PROJECT_NAME = "Project1111"
         OWNER_NAME   = "Dmitriy"
